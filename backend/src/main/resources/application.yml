@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: liulizhifu
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/liulizhifu?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+  jackson:
+    default-property-inclusion: always
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+logging:
+  level:
+    root: info
+    com.liulizhifu: debug

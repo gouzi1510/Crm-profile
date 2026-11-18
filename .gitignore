@@ -1,0 +1,27 @@
+# ---------- 构建产物 ----------
+backend/target/
+frontend/dist/
+frontend/node_modules/
+
+# ---------- 数据文件（业务数据 + 账号密码，不入库）----------
+# 02_data.sql 由 gen_data.py 本地生成；账号由部署脚本现场初始化
+backend/src/main/resources/db/02_data.sql
+
+# ---------- 部署产物（jar / dist / 数据 dump，均为构建输出，不入库；部署时本地构建后随包上传）----------
+liulizhifu/app/
+liulizhifu/web/
+liulizhifu/db/
+
+# ---------- 个人文档 ----------
+面试文档.html
+
+# ---------- IDE / 系统 ----------
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ---------- 日志 ----------
+*.log
+nohup.out
